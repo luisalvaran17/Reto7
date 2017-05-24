@@ -4,20 +4,27 @@
 
 
 class Practica4 {
+
+
+
           protected:
-                     int codigo;
+                     QString codigo;
                      QString nombre;
                      QString categoria;
-                     int unidades;
+                     double unidades;
+                     double costo;
            public:
-                     Practica4(int codigo,QString nombre, QString categoria,int unidades);
+                     Practica4(QString codigo,QString nombre, QString categoria,double unidades, double costo);
+
 
                      virtual double getSubtotal ()=0;
-                     virtual double getIVA ()=0;
+                     virtual double getIVA()=0;
                      virtual double getTotal ()=0;
 
 
+
 };
+
 
 #endif // PRACTICA4_H
 

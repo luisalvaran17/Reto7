@@ -15,10 +15,14 @@ TEMPLATE = app
 SOURCES += main.cpp\
         ventana.cpp \
     practica4.cpp \
-    basica.cpp
+    basica.cpp \
+    aseo.cpp \
+    general.cpp
 
 HEADERS  += ventana.h \
     practica4.h \
-    basica.h
+    basica.h \
+    aseo.h \
+    general.h
 
 FORMS    += ventana.ui
