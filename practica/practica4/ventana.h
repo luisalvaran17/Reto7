@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 #include "basica.h"
+#include "aseo.h"
+#include "general.h"
 #include <vector>
 
 using std::vector;
@@ -28,6 +30,8 @@ private slots:
 private:
     Ui::Ventana *ui;
     vector <Basica*> listaPractica4;
+    vector <general*> listaGeneral;
+    vector <aseo*> listaAseo;
 };
 
 #endif // VENTANA_H

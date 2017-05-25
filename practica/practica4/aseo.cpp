@@ -22,6 +22,7 @@ double aseo::getTotal(){
     return ((costo * unidades) + ((costo * unidades) * 0.01));
 }
 
+
 QString aseo::getCodigo(){
     return codigo;
 }
@@ -62,5 +63,3 @@ void aseo::setUnidades(double unidades){
 void aseo::setCosto(double costo){
     this -> costo = costo;
 }
-
-

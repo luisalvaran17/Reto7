@@ -63,4 +63,3 @@ void general::setUnidades(double unidades){
 void general::setCosto(double costo){
     this -> costo = costo;
 }
-
