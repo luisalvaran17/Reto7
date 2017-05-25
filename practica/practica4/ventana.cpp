@@ -36,7 +36,7 @@ void Ventana::on_pushButton_clicked()
 
 void Ventana::on_pushButton_2_clicked()
 {
-    QString salida = "Codigo\tNombre\tCategoria\tUnidades\tCosto\tSubtotal\n";
+    QString salida = "Codigo\tNombre\tCategoria\tUnidades\tCosto\tSubtotal\tIva\tTotal\n";
 
     for(int i=0; i<(int)listaPractica4.size(); i++){
 
@@ -50,8 +50,13 @@ void Ventana::on_pushButton_2_clicked()
         salida +=QString::number(listaPractica4[i]->getUnidades());
         salida +="\t";
         salida +=QString::number(listaPractica4[i]->getCosto());
+        salida += "\t";
+        salida +=QString::number(listaPractica4[i]-> getSubtotal ());
+        salida += "\t";
+        salida +=QString::number(listaPractica4[i]-> getIVA());
+        salida += "\t";
+        salida +=QString::number(listaPractica4[i]->getTotal());
         salida += "\n";
-
     }
 
     ui ->objSalida->setText(salida);

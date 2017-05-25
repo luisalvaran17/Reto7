@@ -14,12 +14,12 @@ double Basica::getSubtotal(){
 
 double Basica::getIVA(){
 
-    return 0.5;
+    return  0.05*(costo * unidades);
 }
 
 double Basica::getTotal(){
 
-    return (unidades*costo)*0.5;
+    return ((costo * unidades) + ((costo * unidades) * 0.05));
 }
 
 QString Basica::getCodigo(){
